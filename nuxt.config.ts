@@ -1,14 +1,14 @@
 export default defineNuxtConfig({
     devtools: false,
     head: {
-        title: 'My Nuxt.js Project',
+        title: 'Karelin Stepan',
         htmlAttrs: {
             lang: 'ru',
         },
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: '' },
+            { hid: 'description', name: 'description', content: 'Привет, я Карелин Степан Frontend-разработчик из Челябинска, увлеченный созданием доступных и удобных для пользователя веб-сайтов.' },
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },

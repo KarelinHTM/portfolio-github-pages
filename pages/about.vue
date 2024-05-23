@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 useSeoMeta({
-	title: 'Karelin Stepan'
+	title: 'Обо мне | Karelin Stepan'
 })
 </script>
 

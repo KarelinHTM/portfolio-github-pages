@@ -41,19 +41,19 @@ const onSubmit = handleSubmit((value) => {
 <template>
 	<footer id='contacts' class='md:py-20 py-16 pb-0 border-t'>
 		<div class="container my-grid ">
-			<div class='flex flex-col md:col-span-6 col-span-4 md:mb-0 mb-16'>
+			<div class='flex flex-col md:col-span-6 col-span-4 md:mb-0 mb-8'>
 				<div>
 					<h3
-						class='text-accent-foreground lg:text-7xl lg:leading-tight md:text-5xl md:leading-tight text-[42px] leading-tight md:mb-6 mb-4'>
+						class='text-accent-foreground lg:text-7xl lg:leading-tight md:text-5xl md:leading-tight text-[42px] leading-tight md:mb-6 mb-3'>
 						Связаться со
 						мной
 					</h3>
-					<p class='mb-2'>
+					<p class='mb-1'>
 						Напиши на почту
 						<a href="mailto:karelin.developer@gmail.com" target="_blank" rel="noopener noreferrer"
 							class='text-accent-foreground border-b border-primary hover:text-secondary-foreground transition-colors'>karelin.developer@gmail.com</a>
 					</p>
-					<p class='mb-10'>
+					<p class='md:mb-10 mb-8'>
 						Дополнительная информация в моём
 						<a href="" target="_blank" rel="noopener noreferrer"
 							class='text-accent-foreground border-b border-primary hover:text-secondary-foreground transition-colors'>резюме</a>
@@ -62,7 +62,7 @@ const onSubmit = handleSubmit((value) => {
 				</div>
 				<span class='mt-auto md:block hidden'>© 2024 Карелин Степан</span>
 			</div>
-			<form novalidate @submit='onSubmit' class='w-full md:col-span-6 col-span-4'>
+			<form novalidate @submit='onSubmit' class='w-full md:col-span-6 col-span-4 md:m-0 mb-[30px]'>
 				<UiFormField v-slot="{ componentField }" name="name">
 					<UiFormItem class='mb-6'>
 						<UiFormLabel>Имя</UiFormLabel>
@@ -91,7 +91,7 @@ const onSubmit = handleSubmit((value) => {
 					</UiFormItem>
 				</UiFormField>
 				<UiFormField v-slot="{ componentField }" name="message">
-					<UiFormItem class='mb-10'>
+					<UiFormItem class='md:mb-10 mb-8'>
 						<UiFormLabel>Описание</UiFormLabel>
 						<UiFormControl>
 							<UiTextarea class=" rounded" v-bind='componentField' />
