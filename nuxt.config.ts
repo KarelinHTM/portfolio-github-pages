@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+    devtools: false,
     head: {
         title: 'My Nuxt.js Project',
         htmlAttrs: {

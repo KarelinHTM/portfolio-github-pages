@@ -8,7 +8,7 @@ const isBurgerStore = useIsBurgerStore()
 const isLoadingStore = useIsLoadingStore()
 const isAuthStore = useIsAuthStore()
 
-const screenWidth = useWindowWidth()
+const screenWidth = ref(process.client ? useWindowWidth() : 800)
 
 const dynamicClass = computed(() => {
 	let translateValue = screenWidth.value
@@ -42,9 +42,6 @@ onMounted(async () => {
 })
 
 </script>
-
-
-
 
 <template>
 	<div>

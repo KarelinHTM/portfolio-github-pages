@@ -1,8 +1,10 @@
 export function useWindowWidth() {
-  const width = ref(window.innerWidth);
+
+  const screenWidth = ref(window.innerWidth);
 
   const updateWidth = () => {
-    width.value = window.innerWidth;
+      screenWidth.value = window.innerWidth;
+  
   };
 
   onMounted(() => {
@@ -13,5 +15,5 @@ export function useWindowWidth() {
     window.removeEventListener('resize', updateWidth);
   });
 
-  return width;
+  return screenWidth;
 }
