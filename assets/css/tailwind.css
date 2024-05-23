@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: #0a0a0a;
+		--foreground: #c7c7c7;
+
+		--muted: 210 40% 96.1%;
+		--muted-foreground: 215.4 16.3% 46.9%;
+
+		--popover: 0 0% 100%;
+		--popover-foreground: 222.2 84% 4.9%;
+
+		--card: 0 0% 100%;
+		--card-foreground: 222.2 84% 4.9%;
+
+		--border: #484848;
+		--input: #1a1a1a;
+
+		--primary: #d3e97a;
+		--primary-foreground: #0a0a0a;
+
+		--secondary: #1a1a1a;
+		--secondary-foreground: #d3e97a;
+
+		--accent: 210 40% 96.1%;
+		--accent-foreground: 222.2 47.4% 11.2%;
+
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 210 40% 98%;
+
+		--ring: #484848;
+
+		--radius: 6.25rem;
+	}
+
+	.dark {
+		--background: #0a0a0a;
+		--foreground: #c7c7c7;
+
+		--muted: 210 40% 96.1%;
+		--muted-foreground: 215.4 16.3% 46.9%;
+
+		--popover: 0 0% 100%;
+		--popover-foreground: 222.2 84% 4.9%;
+
+		--card: 0 0% 100%;
+		--card-foreground: 222.2 84% 4.9%;
+
+		--border: #484848;
+		--input: #1a1a1a;
+
+		--primary: #d3e97a;
+		--primary-foreground: #0a0a0a;
+
+		--secondary: #1a1a1a;
+		--secondary-foreground: #d3e97a;
+
+		--accent: #fff;
+		--accent-foreground: #fff;
+
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 210 40% 98%;
+
+		--ring: #484848;
+	}
+}
+
+@layer base {
+	::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: #1a1a1a;
+	}
+
+	::-webkit-scrollbar-thumb {
+		/* box-shadow: inset 0 0 6px #d3e97a; */
+		background-color: #d3e97a;
+		border-radius: 8px;
+	}
+
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+		font-family: 'Manrope', sans-serif;
+		overflow-x: hidden;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		@apply uppercase;
+		font-family: 'Oswald';
+	}
+
+	.overflow-hidden {
+		overflow: hidden !important;
+	}
+
+	section {
+		@apply py-20;
+
+		@media (max-width: 768px) {
+			@apply py-16;
+		}
+	}
+
+	p {
+		@apply lg:text-lg text-base;
+	}
+
+	.my-grid {
+		display: grid;
+		column-gap: 24px;
+		grid-template-columns: repeat(12, 1fr);
+
+		@media (max-width: 768px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+}

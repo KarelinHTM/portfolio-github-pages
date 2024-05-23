@@ -1,0 +1,5 @@
+export const APP_WRITE_ID = 'my-portfolio'
+export const DB_ID = 'my-portfolio-base'
+export const COLLECTION_PROJECTS = 'projects'
+export const COLLECTION_EXPERIENCE = 'experience'
+export const STORAGE_ID = 'my-portfolio-storage'
