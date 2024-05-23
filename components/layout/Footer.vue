@@ -39,9 +39,9 @@ const onSubmit = handleSubmit((value) => {
 </script>
 
 <template>
-	<footer id='contacts' class='md:py-20 py-16 border-t'>
-		<div class="container my-grid gap-y-16">
-			<div class='flex flex-col md:col-span-6 col-span-4'>
+	<footer id='contacts' class='md:py-20 py-16 pb-0 border-t'>
+		<div class="container my-grid ">
+			<div class='flex flex-col md:col-span-6 col-span-4 md:mb-0 mb-16'>
 				<div>
 					<h3
 						class='text-accent-foreground lg:text-7xl lg:leading-tight md:text-5xl md:leading-tight text-[42px] leading-tight md:mb-6 mb-4'>
@@ -101,7 +101,7 @@ const onSubmit = handleSubmit((value) => {
 				</UiFormField>
 				<UiButton size='lg' type="submit">Отправить</UiButton>
 			</form>
-			<span class='mt-auto md:hidden col-span-4 block'>© 2024 Карелин Степан</span>
+			<span class='mt-auto md:hidden col-span-4 block py-6 md:py-0 text-center'>© 2024 Карелин Степан</span>
 		</div>
 	</footer>
 </template>
