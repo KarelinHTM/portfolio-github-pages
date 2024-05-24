@@ -48,19 +48,24 @@ const onSubmit = handleSubmit((value) => {
 						Связаться со
 						мной
 					</h3>
-					<p class='mb-1'>
+					<p class='md:mb-10 mb-8'>
 						Напиши на почту
 						<a href="mailto:karelin.developer@gmail.com" target="_blank" rel="noopener noreferrer"
 							class='text-accent-foreground border-b border-primary hover:text-secondary-foreground transition-colors'>karelin.developer@gmail.com</a>
 					</p>
-					<p class='md:mb-10 mb-8'>
+					<!-- <p class='mb-1'>
+						Напиши на почту
+						<a href="mailto:karelin.developer@gmail.com" target="_blank" rel="noopener noreferrer"
+							class='text-accent-foreground border-b border-primary hover:text-secondary-foreground transition-colors'>karelin.developer@gmail.com</a>
+					</p> -->
+					<!-- !Дополнить резюме -->
+					<!-- <p class='md:mb-10 mb-8'>
 						Дополнительная информация в моём
 						<a href="" target="_blank" rel="noopener noreferrer"
 							class='text-accent-foreground border-b border-primary hover:text-secondary-foreground transition-colors'>резюме</a>
-					</p>
+					</p> -->
 					<SocialList />
 				</div>
-				<a href="http://" target="_blank" rel="noopener noreferrer"></a>
 				<a href="https://t.me/karelindeveloper" target="_blank" rel="noopener noreferrer"
 					class='mt-auto md:block hidden'>© 2024 Карелин Степан</a>
 			</div>

@@ -1,7 +1,7 @@
 <template>
 	<div class='inline-flex gap-4 items-center'>
 		<UiButton size='icon' variant='secondary' as-child>
-			<a href="http://" target="_blank" rel="noopener noreferrer">
+			<a href="https://github.com/KarelinHTM" target="_blank" rel="noopener noreferrer">
 				<Icon size='26px' name="bxl:github" />
 			</a>
 		</UiButton>

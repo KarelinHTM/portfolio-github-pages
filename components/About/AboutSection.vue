@@ -27,11 +27,12 @@
 					</NuxtLink>
 				</UiButton>
 				<div v-if='$route.path !== "/"' class='flex items-center gap-4'>
-					<UiButton size='lg' class='pr-0 pl-2'>
+					<!-- !Дополнить резюме -->
+					<!-- <UiButton size='lg' class='pr-0 pl-2'>
 						Скачать резюме
 						<Icon class='icon ml-2 mr-1 h-10 w-10 p-2 text-accent-foreground bg-background rounded-full' size='26px'
 							name="solar:download-minimalistic-linear" />
-					</UiButton>
+					</UiButton> -->
 					<SocialList />
 				</div>
 			</div>
