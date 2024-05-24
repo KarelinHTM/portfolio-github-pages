@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 import { useWindowWidth } from '~/lib/useWindowWidth'
 import { useIsAuthStore } from '~/store/isAuth.store'
 import { useIsBurgerStore } from '~/store/isBurger.store'
@@ -57,6 +58,7 @@ onMounted(async () => {
 			<LayoutBurgerButton />
 			<LayoutBurgerNavigation />
 		</div>
+		<SpeedInsights />
 	</div>
 
 </template>
