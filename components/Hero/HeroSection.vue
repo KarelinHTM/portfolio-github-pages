@@ -27,7 +27,8 @@
 					</div>
 				</div>
 			</div>
-			<NuxtImg src='/hero.jpg' class='rounded-[1rem] md:col-span-6 col-span-4 w-full' />
+			<NuxtImg src='/hero.jpg' alt='Фото frontend-разрботчика' preload
+				class='rounded-[1rem] md:col-span-6 col-span-4 w-full' />
 		</div>
 	</section>
 </template>

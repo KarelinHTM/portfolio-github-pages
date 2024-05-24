@@ -60,7 +60,9 @@ const onSubmit = handleSubmit((value) => {
 					</p>
 					<SocialList />
 				</div>
-				<span class='mt-auto md:block hidden'>© 2024 Карелин Степан</span>
+				<a href="http://" target="_blank" rel="noopener noreferrer"></a>
+				<a href="https://t.me/karelindeveloper" target="_blank" rel="noopener noreferrer"
+					class='mt-auto md:block hidden'>© 2024 Карелин Степан</a>
 			</div>
 			<form novalidate @submit='onSubmit' class='w-full md:col-span-6 col-span-4 md:m-0 mb-[30px]'>
 				<UiFormField v-slot="{ componentField }" name="name">
@@ -101,7 +103,9 @@ const onSubmit = handleSubmit((value) => {
 				</UiFormField>
 				<UiButton size='lg' type="submit">Отправить</UiButton>
 			</form>
-			<span class='mt-auto md:hidden col-span-4 block py-6 md:py-0 text-center'>© 2024 Карелин Степан</span>
+			<a href="https://t.me/karelindeveloper" target="_blank" rel="noopener noreferrer"
+				class='mt-auto md:hidden col-span-4 block py-6 md:py-0 text-center'>© 2024
+				Карелин Степан</a>
 		</div>
 	</footer>
 </template>
